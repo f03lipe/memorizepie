@@ -1,0 +1,74 @@
+
+@import "macros.less";
+
+.lined() {
+	// border: 1px solid black;
+}
+
+html {
+	height: 100%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.body {
+	height: 100%;
+}
+
+@keyframes fadeInOut {
+	0% { opacity: .4; }
+	50% { opacity: .8; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInOut {
+	0% { opacity: .4; }
+	50% { opacity: .8; }
+	100% { opacity: 1; }
+}
+
+// @keyframes explode {
+// 	0% { font-size: ; }
+// 	50% { opacity: .8; }
+// 	100% { opacity: 1; }
+// }
+
+// @-webkit-keyframes explode {
+// 	0% { font-size: ; }
+// 	50% { opacity: .8; }
+// 	100% { opacity: 1; }
+// }
+
+.container {
+	.lined();
+	margin: 0;
+	width: 100%;
+	max-width: none;
+	
+	.row-fluid {
+		
+		#number-wrapper {
+			.lined();
+			position: relative;
+			text-align: center;
+			margin: auto;
+			width: 90%;
+			.user-select(none);
+
+			#number {
+				display: inline;
+				.lined();
+				cursor: default;
+				top: 50%;
+				position: relative;
+				font: bold 200px Lato;
+
+			}
+			#number.is {
+				animation: fadeInOut .5s;
+				-webkit-animation: fadeInOut .5s;
+			}
+
+		}
+	}
+}

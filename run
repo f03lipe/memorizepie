@@ -1,0 +1,11 @@
+
+cd "$( dirname "${BASH_SOURCE[0]}" )"
+
+cols=$(tput cols)
+
+gnome-terminal -x sh -c "python -m SimpleHTTPServer"
+gnome-terminal --geometry=${cols}x5 -x sh -c "bash css/watch.sh" 
+gnome-terminal --geometry=${cols}x5 -x sh -c "coffee -wc -o . ." 
+# nautilus . & disown
+
+sleep 5 && x-www-browser http://localhost:8000 &

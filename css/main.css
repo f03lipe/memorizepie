@@ -1,0 +1,5 @@
+.unselectable{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none;}
+html{height:100%;overflow:hidden;cursor:pointer;}
+.body{height:100%;}
+@keyframes fadeInOut{0%{opacity:.4;} 50%{opacity:.8;} 100%{opacity:1;}}@-webkit-keyframes fadeInOut{0%{opacity:.4;} 50%{opacity:.8;} 100%{opacity:1;}}.container{margin:0;width:100%;max-width:none;}.container .row-fluid #number-wrapper{position:relative;text-align:center;margin:auto;width:90%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;}.container .row-fluid #number-wrapper #number{display:inline;cursor:default;top:50%;position:relative;font:bold 200px Lato;}
+.container .row-fluid #number-wrapper #number.is{animation:fadeInOut .5s;-webkit-animation:fadeInOut .5s;}
