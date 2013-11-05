@@ -519,6 +519,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 20351,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 1689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/main.less",
+			"settings":
+			{
+				"buffer_size": 1022,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/CoffeeScript/CoffeeScript.sublime-build",
 	"command_palette":
@@ -627,15 +651,17 @@
 	},
 	"file_history":
 	[
-		"/home/felipe/Projects/memorizepi/index.html",
+		"/home/felipe/Projects/vempraruavem/src/static/css/main.less",
+		"/home/felipe/Projects/memorizepi/css/macros.less",
+		"/home/felipe/Projects/vempraruavem/src/views/index.html",
 		"/home/felipe/Projects/memorizepi/run",
 		"/home/felipe/Projects/memorizepi/css/watch.sh",
+		"/home/felipe/Projects/memorizepi/index.html",
 		"/home/felipe/Projects/vempraruavem/src/views/test.html",
 		"/home/felipe/Projects/felip/coffee/painter.js",
 		"/home/felipe/Projects/felip/coffee/painter.coffee",
 		"/home/felipe/Projects/vempraruavem/src/models/event.js",
 		"/home/felipe/Projects/felip/index.html",
-		"/home/felipe/Projects/vempraruavem/src/static/css/main.less",
 		"/home/felipe/Projects/vempraruavem/src/models/event.coffee",
 		"/home/felipe/Projects/vempraruavem/src/pages.js",
 		"/home/felipe/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
@@ -643,7 +669,6 @@
 		"/home/felipe/Projects/vempraruavem/src/routes.js",
 		"/home/felipe/Projects/vempraruavem/run",
 		"/home/felipe/Projects/magnet-project/index.html",
-		"/home/felipe/Projects/vempraruavem/src/views/index.html",
 		"/home/felipe/Projects/meavisa/src/static/js/main.js",
 		"/home/felipe/Projects/vempraruavem/src/static/css/macros.less",
 		"/home/felipe/Projects/vempraruavem/README.md",
@@ -753,12 +778,11 @@
 		"/home/felipe/Projects/meavisa/keys.js",
 		"/home/felipe/Projects/meavisa/pages.js",
 		"/home/felipe/Projects/meavisa/app.js",
-		"/home/felipe/Projects/meavisa/update.js",
-		"/home/felipe/Projects/magnet-project/js/stiffexperimentation.js"
+		"/home/felipe/Projects/meavisa/update.js"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -772,6 +796,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"html",
+			"span",
+			"opacity: .4; }",
+			"opacity",
+			"opacity: .4",
+			"fadeInOut",
+			"5",
+			"0",
+			"				//..",
+			"		//..\n			break;",
+			"from",
+			"2s",
+			"	to { color: red; }\n",
+			".2s",
+			"fadeInOut",
+			"easeOut",
+			",50)",
+			"100",
+			"slice",
+			" ",
+			"window",
+			"width",
+			"div",
 			"data",
 			"arguments[0]",
 			"open",
@@ -876,30 +923,7 @@
 			"find",
 			"find]",
 			"find",
-			"toFb",
-			"Event.",
-			"authTypes",
-			"Qeue",
-			"Queue",
-			"searchAnd",
-			"getValid",
-			"Location",
-			"getMaps",
-			"(err) then r",
-			"docs",
-			"dec(",
-			"found.dec",
-			"td",
-			"5px",
-			"circles",
-			"#calendar",
-			"Calendar =",
-			"Calendar(",
-			"Calendar",
-			"render(",
-			"5px",
-			"table",
-			"if ("
+			"toFb"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1045,14 +1069,98 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19272,
+								19272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2340.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								876,
+								876
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/main.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								816,
+								816
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 838.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -1088,7 +1196,7 @@
 	"project": "pi.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
