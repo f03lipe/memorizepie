@@ -1,8 +1,12 @@
 
+// main.js for memorizepie, @f03lipe
+
 $(function () {
+
 	function onResize() {
 		$("#number-wrapper").height($(window).height());
 
+		/* Calculate x,y changes per font-size unit to an element size. */
 		var d = (function calcDelta () {
 			var old = $("#number").css('font-size');
 			var inc = 2000;
@@ -15,25 +19,20 @@ $(function () {
 			return {y: (h2-h1)/inc, x: (w2-w1)/inc};
 		})();
 
+		/* Change to fit #number-wrapper. */
 		var incFont = Math.min(($('#number-wrapper').width()-$("#number").width())/d.x,
 			($('#number-wrapper').height()-$("#number").height())/d.y);
-
-		console.log(d, incFont);
-
 		$("#number").css('font-size', '+='+incFont);
 		$("#number-wrapper").css('margin-top', '-'+$("#number").height()/2+'px');
 	}
 
-	function update (x) {
+	var step = 5;
+
+	function updateCount(x) {
 		$("#number").html(x);
+		$(".info #dcount").html(i-1-step);
+		$(".info #count").html((i-1-step)/step);
 	}
-
-	$(window).resize(onResize);
-	setTimeout(onResize,500);
-
-	var i = 6;
-	update(pi.slice(0,6));
-	$('.container').bind('click', getNext);
 
 	function fadeInOut () {
 		$("#number").addClass('is');
@@ -44,10 +43,10 @@ $(function () {
 
 	function getNext () {
 		if (i>pi.length-1)
-			update('BADASSS!');
+			updateCount('BADASSS!');
 		else {
 			fadeInOut();
-			update(pi.slice(i,(i+=5)));
+			updateCount(pi.slice(i,(i+=5)));
 		}
 	}
 		
@@ -55,8 +54,15 @@ $(function () {
 		fadeInOut();
 		i = Math.max(0,i-10); // i = i-10, at least 0;
 		i = (i==1)?0:i;
-		update(pi.slice(i,(i+=(i<5)?6:5)));
+		updateCount(pi.slice(i,(i+=step+((i<step)?1:0))));
 	}
+
+	$(window).resize(onResize);
+	setTimeout(onResize,500);
+
+	var i = 6;
+	updateCount(pi.slice(0,6));
+	$('.container').bind('click', getNext);
 
 	$(window).keydown(function (e) {
 		var keyCode = e.keyCode || e.which,
