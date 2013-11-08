@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 20566,
+				"buffer_size": 20592,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 1937,
+				"buffer_size": 2459,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "css/main.less",
 			"settings":
 			{
-				"buffer_size": 1132,
+				"buffer_size": 1379,
 				"line_ending": "Unix"
 			}
 		}
@@ -782,7 +782,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -796,6 +796,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"console.log",
 			"update(",
 			"update",
 			"html",
@@ -922,8 +923,7 @@
 			"toFbObject",
 			"Event.",
 			"Event",
-			"find",
-			"find]"
+			"find"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1078,15 +1078,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20566,
+						"buffer_size": 20592,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19939,
-								19939
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1107,15 +1107,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1937,
+						"buffer_size": 2459,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2030,
+								2030
 							]
 						],
 						"settings":
@@ -1124,7 +1124,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1172.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1135,23 +1135,24 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1132,
+						"buffer_size": 1379,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								378,
-								378
+								622,
+								622
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 399.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
