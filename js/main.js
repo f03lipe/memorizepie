@@ -1,6 +1,14 @@
 
 // main.js for memorizepie, @f03lipe
 
+var msgs = {
+	300: 'There\'s a limit to how far we can go, d\'ya know that?',
+	450: 'You can\'t possibly have memorized all of this.',
+	600: 'Go on, I\'m sure you\'re just pressing → anyways.',
+	750: 'I won\'t bother with you no more.',
+	1000: 'See, the digits here are finite, but it\'s still going to take you a long time to get there...',
+}
+
 $(function () {
 
 	function onResize() {
@@ -32,6 +40,17 @@ $(function () {
 		$("#number").html(x);
 		$(".info #dcount").html(i-1-step);
 		$(".info #count").html((i-1-step)/step);
+		var y = x-x%50;
+		while (1) {
+			y -= 50;
+			if (msgs[y]) {
+				console.log('found');
+				$(".info #msg").html(msgs[y]);
+				break;
+			} else if (y < 200) {
+				$(".info #msg").html('');
+			}
+		}
 	}
 
 	function fadeInOut () {

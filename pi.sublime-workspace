@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"background",
+				"background-position"
+			],
+			[
 				"update",
 				"updtEventsCache"
 			],
@@ -510,10 +514,6 @@
 			[
 				"WAN",
 				"WANTED_HEIGHT"
-			],
-			[
-				"WA",
-				"WANTED_HEIGHT"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 20351,
+				"buffer_size": 20566,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 1689,
+				"buffer_size": 1937,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "css/main.less",
 			"settings":
 			{
-				"buffer_size": 1022,
+				"buffer_size": 1132,
 				"line_ending": "Unix"
 			}
 		}
@@ -651,9 +651,11 @@
 	},
 	"file_history":
 	[
+		"/home/felipe/Projects/memorizepi/js/main.js",
+		"/home/felipe/Projects/vempraruavem/src/views/index.html",
+		"/home/felipe/Projects/meavisa/src/views/index.html",
 		"/home/felipe/Projects/vempraruavem/src/static/css/main.less",
 		"/home/felipe/Projects/memorizepi/css/macros.less",
-		"/home/felipe/Projects/vempraruavem/src/views/index.html",
 		"/home/felipe/Projects/memorizepi/run",
 		"/home/felipe/Projects/memorizepi/css/watch.sh",
 		"/home/felipe/Projects/memorizepi/index.html",
@@ -776,9 +778,7 @@
 		"/home/felipe/Projects/meavisa/db.js",
 		"/home/felipe/Projects/meavisa/apis.js",
 		"/home/felipe/Projects/meavisa/keys.js",
-		"/home/felipe/Projects/meavisa/pages.js",
-		"/home/felipe/Projects/meavisa/app.js",
-		"/home/felipe/Projects/meavisa/update.js"
+		"/home/felipe/Projects/meavisa/pages.js"
 	],
 	"find":
 	{
@@ -796,6 +796,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"update(",
+			"update",
 			"html",
 			"span",
 			"opacity: .4; }",
@@ -921,9 +923,7 @@
 			"Event.",
 			"Event",
 			"find",
-			"find]",
-			"find",
-			"toFb"
+			"find]"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1069,7 +1069,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1078,15 +1078,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20351,
+						"buffer_size": 20566,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19272,
-								19272
+								19939,
+								19939
 							]
 						],
 						"settings":
@@ -1096,7 +1096,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2340.0,
+						"translation.y": 3450.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1107,20 +1107,21 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1689,
+						"buffer_size": 1937,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								876,
-								876
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1134,15 +1135,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1022,
+						"buffer_size": 1132,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								816,
-								816
+								378,
+								378
 							]
 						],
 						"settings":
@@ -1150,7 +1151,7 @@
 							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 838.0,
+						"translation.y": 399.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1214,7 +1215,7 @@
 		[
 			[
 				"",
-				"~/Projects/meavisa/meavisa.sublime-project"
+				"~/Projects/vempraruavem/vempraruavem.sublime-project"
 			]
 		],
 		"width": 380.0

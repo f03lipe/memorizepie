@@ -13,7 +13,15 @@ body {
 	overflow: hidden;
 	cursor: pointer;
 	height: 100%;
-	background: url(bg.png);
+}
+.bg {
+	position: fixed;
+	top: 0; left: 0;right:0;bottom:0;
+	opacity: .6;
+	background: url(../bg.png);
+	background-attachment:fixed;
+	background-clip:content-box;
+	background-repeat:no-repeat;
 }
 
 @keyframes fadeInOut {
@@ -70,7 +78,7 @@ body {
 				top: 50%;
 				position: relative;
 				font: bold 200px Lato;
-
+				text-shadow: 1px 2px 15px fadeout(black,60%);
 			}
 			#number.is {
 				animation: fadeInOut .5s;
