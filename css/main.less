@@ -16,12 +16,24 @@ body {
 }
 .bg {
 	position: fixed;
-	top: 0; left: 0;right:0;bottom:0;
-	opacity: .6;
-	background: url(../bg.png);
+	
 	background-attachment:fixed;
 	background-clip:content-box;
 	background-repeat:no-repeat;
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: .6;
+	
+	background: url(../bg.png) no-repeat center top fixed;
+	background-clip: content-box;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 @keyframes fadeInOut {
